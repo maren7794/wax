@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  category: MyString
+  name: MyString
+  colour: MyString
+  print: MyString
+  material: MyString
+  buckle: MyString
+  size: MyString
+  price: 1
+  active: false
+
+two:
+  category: MyString
+  name: MyString
+  colour: MyString
+  print: MyString
+  material: MyString
+  buckle: MyString
+  size: MyString
+  price: 1
+  active: false
