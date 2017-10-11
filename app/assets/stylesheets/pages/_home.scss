@@ -1,1 +1,51 @@
 // Specific CSS for your home-page
+.offers {
+  //background-color: #d2d2d7;
+}
+
+.offer-grid {
+  color: white;
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  height: 40px;
+  align-items: center;
+}
+
+.offer-picture{
+  width: 100%;
+  height: 40px;
+  display: block;
+  position: relative;
+}
+
+.offer-picture::after{
+  content: "";
+  background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(http://res.cloudinary.com/dckfp34gk/image/upload/v1507721614/pfau_jvloag.jpg);
+
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+@media (min-width: 480px) {
+  .wax-prints {
+    background-size: cover;
+    height: 65vh;
+    padding: 10px;
+  }
+  .wax-print-description{
+    margin: 5% 25%;
+    text-align: center;
+
+  }
+}
+
+@media (max-width: 480px) {
+  .wax-prints{
+    font-size: 60px;
+  }
+}

@@ -7,9 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Product.delete_all
-Product.create! id: 1, name: "Banana", price: 2, active: true
-Product.create! id: 2, name: "Apple", price: 1, active: true
-Product.create! id: 3, name: "Carton of Strawberries", price: 1.99, active: true
+Product.create! id: 1, name: "Lion", price: 35, active: true, print: "lion", cl_id: "leo_p5ceiu"
+Product.create! id: 2, name: "Jungle", price: 30, active: true, print: "jungle", cl_id: "green_dl5rrl"
+Product.create! id: 3, name: "Flower", price: 35, active: true, print: "flower", cl_id: "flowers_v0dvx6"
+Product.create! id: 4, name: "Flamingo", price: 35, active: true, print: "flamingo", cl_id: "flamingo_daovqs"
+Product.create! id: 5, name: "Classic", price: 35, active: true, print: "africa", cl_id: "african_am0ypr"
 
 OrderStatus.delete_all
 OrderStatus.create! id: 1, name: "In Progress"

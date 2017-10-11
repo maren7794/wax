@@ -1,0 +1,25 @@
+.favorites{
+  padding: 10px 0;
+}
+.center-header {
+  display: flex;
+  justify-content: center;
+}
+
+.favorites-cards{
+  padding: 10px 5px;
+}
+
+.favorites-image {
+  img {
+    height: 290px;
+    width: 100%;
+  }
+}
+.favorites-description {
+  background-color: white;
+  padding: 5px 0;
+  text-align: center;
+}
+
+

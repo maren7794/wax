@@ -1,3 +1,43 @@
-<h1>WAX</h1>
-<div class="banner" style="background-image: linear-gradient(-225deg, rgba(167,167,167,0.5) 0%, rgba(154,154,154,0.5) 50%), url('<%= image_path 'banner.png' %>');">
-<%#= image_tag "banner.png", class: "banner-home" %>
+<div class="banner-home" style="background-image: url('<%= cl_image_path "white_shirt_a6789o" %>');">
+  <h1> Hi </h1>
+</div>
+
+<div class="offers">
+<div class="offer-picture">
+    <div class="offer-grid">
+      <div class="offer"> <span>free shipping</span> </div>
+      <div class="offer"> <span>free retour</span> </div>
+      <div class="offer"> <span>social support</span> </div>
+  </div>
+  </div>
+</div>
+
+<div class="favorites">
+  <h1 class="center-header"> FAVORITES</h1>
+  <div class="container favorites-container">
+    <% @products[0..3].each do |product| %>
+    <div class="col-xs-6 col-md-3 favorites-cards">
+      <div class="favorites-image">
+        <%= cl_image_tag product.cl_id %>
+      </div>
+      <div class="favorites-description">
+        <p> <%= product.name %> </p>
+        <p> <%= product.price.to_s + "€" %> </p>
+        <div class="shop-button">shop now</div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+<div class="wax-prints" style="background-image: url('<%= cl_image_path 'stoff_edmscu' %>');">
+  <div class="wax-print-description">
+    <h2 class="center-header">African Wax Prints</h2>
+    <p> Our Ghanaian wax prints are produced sustainably by women and men from difficult backgrounds. By buying one item, you can help keeping them off the streets and being able to feed their families. To produce wax printed cloth, a wax resin is applied to the fabric before it is submerged into the dye, in order to allow the dye to repel the wax covered parts of the fabric. This process is repeated, to build up a coloured design on the fabric. Every print is designed by one of our workers and has personal meaning to them.</p>
+  </div>
+
+</div>
+
+<div class="social-media">
+  <h2 class="center-header" ># Waxilicious </h2>
+</div>
