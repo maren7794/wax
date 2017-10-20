@@ -1,14 +1,17 @@
 <div class="banner-home" style="background-image: url('<%= cl_image_path "white_shirt_a6789o" %>');">
-  <h1> Hi </h1>
+  <div class="banner-wrapper">
+    <h1 class="right-header row-one"> Wax prints </h1>
+    <h2 class="right-header row-two"> Made in Ghana with love </h2>
+  </div>
 </div>
 
 <div class="offers">
-<div class="offer-picture">
+  <div class="offer-picture">
     <div class="offer-grid">
       <div class="offer"> <span>free shipping</span> </div>
       <div class="offer"> <span>free retour</span> </div>
       <div class="offer"> <span>social support</span> </div>
-  </div>
+    </div>
   </div>
 </div>
 
@@ -40,4 +43,45 @@
 
 <div class="social-media">
   <h2 class="center-header" ># Waxilicious </h2>
+  <div class="wax-container">
+    <div class="wax-gallery">
+      <% insta_pics = ["einstecktuch_k2rcyy", "print_hand_xpbseu", "wax_print_woman1_ghms7x", "stoffe_qbyuul", "man_back_zrpqer", "pfau_wax_wnmfee"] %>
+      <% insta_pics.each do |pic| %>
+      <div class="insta-pic">
+        <%= cl_image_tag pic  %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="producers">
+  <h2 class="center-header"> Meet our producers </h2>
+  <div class="wax-container">
+    <div class="wax-gallery">
+      <% producers = {"Gamal Sadat" =>"print_man_ivcohe", "Wangari Achebe" => "print_woman_cqf9ot", "Tegla Bekele" => "print_woman1_ejgr2w"} %>
+      <% producers.each do |producer| %>
+        <div class="producer">
+          <div class="producer-pic" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cl_image_path producer[1] %>');">
+            <!-- <div class="producer-pic">
+              <%#= cl_image_tag producer[1] %>
+            </div> -->
+            <div class="producer-description">
+              <div class="producer-name">
+                <p> <%= producer[0] %></p>
+              </div>
+              <div class="producer-work">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <div class="btn-white">
+                Find out more
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
 </div>

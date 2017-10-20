@@ -2,4 +2,20 @@
   background-size: cover;
   height: 80vh;
   object-fit: cover;
+  position: relative;
+}
+
+.banner-wrapper{
+  width: 40%;
+  position: absolute;
+  right: 0;
+  bottom: 30%;
+  .right-header {
+    padding: 2px 27px;
+    background: rgb(187, 223, 213);
+    width: fit-content;
+  }
+  .row-two {
+    margin-left: 8%;
+  }
 }
